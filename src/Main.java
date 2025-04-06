@@ -27,8 +27,9 @@ public class Main {
         int ort  = (mat + fizik + kimya + turkce + tarih + muzik);
         double snc = ort / 6.0;
 
-        System.out.println(snc);
+        System.out.println("Not Ortalamanız: " + snc);
 
-
+        String durum = (snc >= 60.0) ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+        System.out.println(durum);
     }
 }
